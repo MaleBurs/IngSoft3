@@ -1,0 +1,12 @@
+Feature: Is it Monday tomorrow?
+  Everybody wants to know when it's Monday
+
+  Scenario: Sunday isn't Monday
+    Given tomorrow is Sunday
+    When I ask whether it's Monday tomorrow
+    Then I should say "YEY"
+
+  Scenario: Monday is Monday
+    Given tomorrow is Monday
+    When I ask whether it's Monday tomorrow
+    Then I should say "Shit!"

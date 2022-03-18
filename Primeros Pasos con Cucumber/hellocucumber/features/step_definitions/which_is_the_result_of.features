@@ -1,0 +1,11 @@
+Feature: Which is the result of?
+  Everybody wants to know  which is the result of doing an operation
+
+  Scenario Outline: Today is or is not Friday
+    Given an "<operation>" between "<number1>" and "<number2>"
+    When I ask the result of the operation
+    Then I should be told "<answer>"
+
+  Examples:
+    | operation | number1 | number2 | answer |
+    | +         | 1       | 2       | 3      |
